@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://goodnighthawk.github.io/resonance-radio/sitemap.xml
