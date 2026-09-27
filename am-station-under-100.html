@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a complete low-cost AM radio station for under $100 using an Amazon-first parts list.">
+  <title>Build a Sub-$100 AM Station — Resonance Radio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html">RESONANCE <span>RADIO</span></a><nav><a href="index.html#builds">Builds</a><a href="index.html#reviews">Reviews</a><a href="index.html#about">About</a></nav></header>
+<main class="article-wrap">
+  <a class="back" href="index.html">← Home</a>
+  <p class="eyebrow">BUILD GUIDE</p>
+  <h1>Build a complete AM station for under $100</h1>
+  <p class="lead">The goal is not maximum RF power. It is a small, stable, reproducible station that can play automated audio from a computer and be received on an ordinary AM radio.</p>
+
+  <div class="callout"><strong>Architecture</strong><div class="diagram">Ubuntu PC <b>→</b> 3.5 mm audio <b>→</b> AM transmitter <b>→</b> matched short antenna <b>→</b> portable AM receiver</div></div>
+
+  <h2>Amazon-first parts list</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Part</th><th>Target</th><th>Budget</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://www.amazon.com/dp/B0CL12NZMS" rel="nofollow">530–1600 kHz AM transmitter</a></td><td>ASIN B0CL12NZMS or equivalent</td><td>$30–40</td><td>Main RF module; adjustable medium-wave carrier and 3.5 mm audio input.</td></tr>
+      <tr><td>Regulated 9 V / 2 A adapter</td><td>Correct barrel size and polarity for transmitter</td><td>$8–10</td><td>Stable power matters; noisy supplies can become audible RF noise.</td></tr>
+      <tr><td>ABS project enclosure</td><td>Approx. 6 × 4 × 2 in</td><td>$7–9</td><td>Mechanical protection and a cleaner finished build.</td></tr>
+      <tr><td>Shielded 3.5 mm AUX cable</td><td>3 ft</td><td>$5–7</td><td>PC audio to transmitter.</td></tr>
+      <tr><td>22 AWG hookup wire</td><td>Stranded, insulated</td><td>$6–8</td><td>Internal wiring plus antenna experiments.</td></tr>
+      <tr><td>Switch / terminals / heat shrink</td><td>Small assortment</td><td>$5–8</td><td>Power control and reliable connections.</td></tr>
+      <tr><td>Portable AM/FM receiver</td><td>Simple analog or digital radio</td><td>$12–18</td><td>Immediate off-air test receiver and a useful review product.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="total">Target total: <strong>$73–100</strong>, depending on current prices and what you already own.</p>
+
+  <h2>What you do not need at first</h2>
+  <p>You do not need a dedicated mixer, studio microphone, expensive antenna tuner or separate playout computer. Start with prerecorded audio from the computer. Add live audio hardware only after the RF chain works cleanly.</p>
+
+  <h2>U.S. compliance note</h2>
+  <p>For an unlicensed U.S. AM build, design around the applicable FCC Part 15 requirements rather than the transmitter seller’s maximum-power claims. In particular, §15.219 limits final-stage DC input power and the combined antenna/transmission-line/ground-lead length. The transmitter should be characterized and adjusted accordingly before operating it as a station.</p>
+
+  <h2>First tests</h2>
+  <ol>
+    <li>Power the transmitter with no antenna and verify clean audio at low modulation.</li>
+    <li>Choose an unused local AM frequency.</li>
+    <li>Connect a short legal-limit antenna system and tune conservatively.</li>
+    <li>Listen on the portable radio at several distances.</li>
+    <li>Inspect the spectrum with an SDR before increasing modulation or changing antenna matching.</li>
+  </ol>
+
+  <div class="callout"><strong>Affiliate status</strong><p>These are currently ordinary product links. If Resonance Radio joins an affiliate program, commission-bearing links will be clearly disclosed and the required program disclosure will be added to the site.</p></div>
+</main>
+<footer><span>© 2026 Resonance Radio</span><span>Independent radio & electronics projects</span></footer>
+</body>
+</html>
